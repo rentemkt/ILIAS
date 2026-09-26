@@ -34,6 +34,13 @@ class ButtonTest extends ILIAS_UI_TestBase
 {
     public const NOT_APPLICABLE = true;
 
+    private ?LanguageMock $symbol_language = null;
+
+    public function getLanguage(): LanguageMock
+    {
+        return $this->symbol_language ?? parent::getLanguage();
+    }
+
     public function getButtonFactory(): Factory
     {
         return new Factory();
@@ -576,6 +583,32 @@ class ButtonTest extends ILIAS_UI_TestBase
         );
         $html = $this->brutallyTrimHTML($r->render($button));
         $this->assertHTMLEquals($expected, $html);
+    }
+
+    public static function getPasswordGlyphLabelProvider(): array
+    {
+        return [
+            ['eyeopen', 'eyeopened', 'Reveal password'],
+            ['eyeclosed', 'eyeclosed', 'Hide password']
+        ];
+    }
+
+    #[\PHPUnit\Framework\Attributes\DataProvider('getPasswordGlyphLabelProvider')]
+    public function testPasswordGlyphLabelIsTranslatedOnlyOnce(
+        string $factory_method,
+        string $translation_key,
+        string $translated_label
+    ): void {
+        $this->symbol_language = $this->createMock(LanguageMock::class);
+        $this->symbol_language->expects($this->once())->method('txt')->willReturnCallback(
+            static fn(string $key): string => $key === $translation_key ? $translated_label : '-' . $key . '-'
+        );
+        $glyph_factory = new \ILIAS\UI\Implementation\Component\Symbol\Glyph\Factory($this->symbol_language);
+        $button = $this->getButtonFactory()->shy('', '')->withSymbol($glyph_factory->$factory_method());
+
+        $html = $this->getDefaultRenderer()->render($button);
+
+        $this->assertStringContainsString('aria-label="' . $translated_label . '"', $html);
     }
 
 }

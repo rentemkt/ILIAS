@@ -362,8 +362,7 @@ class Renderer extends AbstractComponentRenderer
         if (!$symbol instanceof Glyph) {
             return $symbol->getLabel();
         }
-        // @todo: this breaks custom labels, translation should happen in factory...
-        $label = $this->txt($symbol->getLabel());
+        $label = $symbol->getLabel();
         foreach ($symbol->getCounters() as $counter) {
             if ($counter->getNumber() > 0) {
                 $label .= $this->txt("counter_" . $counter->getType()) . " " . $counter->getNumber() . "; ";
