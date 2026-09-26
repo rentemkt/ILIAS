@@ -2067,6 +2067,7 @@ auth#:#auth_oidc_discover_scopes_info#:#The automatic scope discovery was perfor
 auth#:#auth_oidc_failed#:#Login via OpenID Connect failed
 auth#:#auth_oidc_here#:#here
 auth#:#auth_oidc_login_element_info#:#Login to ILIAS via OpenID Connect
+auth#:#auth_oidc_login_to_instance#:#Log in to %s via OpenID Connect
 auth#:#auth_oidc_mapping_table#:#Mapping ILIAS User Information to OpenID Connect Attributes
 auth#:#auth_oidc_profile#:#User Profile Mapping
 auth#:#auth_oidc_role_info#:#OpenID Connect Attribute::Value (e.g: ‘roles::employee‘).
@@ -4471,6 +4472,7 @@ common#:#inst_info#:#Installation Info
 common#:#inst_name#:#Installation Name
 common#:#install#:#Install
 common#:#install_local#:#Install With Custom File
+common#:#installation_powered_by#:#%s · Powered by ILIAS
 common#:#installation_status#:#Installation Status
 common#:#installed#:#Installed
 common#:#installed_local#:#Installed With Custom file
@@ -4602,6 +4604,9 @@ common#:#login_to_ilias#:#Login to ILIAS
 common#:#login_to_ilias_via_login_form#:#Login to ILIAS
 common#:#login_to_ilias_via_saml#:#Login to ILIAS via SAML Authentication
 common#:#login_to_ilias_via_shibboleth#:#Login to ILIAS via
+common#:#login_to_instance#:#Log in to %s
+common#:#login_to_instance_via_saml#:#Log in to %s via SAML
+common#:#login_to_instance_via_shibboleth#:#Log in to %s via
 common#:#loginname_already_exists#:#This login name already exists.
 common#:#loginname_settings#:#Login Name Settings
 common#:#logout#:#Logout
@@ -5493,6 +5498,7 @@ common#:#rename_file#:#Rename File
 common#:#renderer_supported_file_types#:#Supported File Types
 common#:#renderer_supported_repo_types#:#Supported ILIAS Objects
 common#:#renderer_type_builtin#:#Built-in
+common#:#rep_instance_logo_alt#:#%s logo - to the start page
 common#:#rep_main_page#:#Home
 common#:#rep_main_page_logo_alt#:#Logo ILIAS - to the start page
 common#:#repeat_scan#:#Repeating virus scan...

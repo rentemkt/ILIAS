@@ -28,6 +28,7 @@ use ILIAS\Refinery\Factory as RefineryFactory;
 use ILIAS\HTTP\Services as HTTPServices;
 use ILIAS\TermsOfService\Consumer as TermsOfService;
 use ILIAS\DataProtection\Consumer as DataProtection;
+use ILIAS\Administration\InstanceIdentity;
 use ILIAS\components\Authentication\Logout\ConfigurableLogoutTarget;
 use ILIAS\LegalDocuments\Conductor;
 use ILIAS\components\Authentication\Pages\AuthPageEditorContext;
@@ -98,6 +99,15 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         $this->ctrl->saveParameter($this, ['rep_ref_id', 'lang', 'target', 'client_id']);
         $this->user->setLanguage($this->lng->getLangKey());
         $this->help->setScreenIdComponent('init');
+    }
+
+    private function instanceLabelForHTML(string $topic): string
+    {
+        return htmlspecialchars(
+            InstanceIdentity::format($this->lng->txt($topic), $this->setting->get('inst_name')),
+            ENT_QUOTES | ENT_SUBSTITUTE,
+            'UTF-8'
+        );
     }
 
     public static function setForcedCommand(string $cmd): void
@@ -588,7 +598,10 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
                     ),
         ];
 
-        $sections = [$field_factory->section($fields, $this->lng->txt('login_to_ilias_via_login_form'))];
+        $sections = [$field_factory->section(
+            $fields,
+            InstanceIdentity::format($this->lng->txt('login_to_instance'), $this->setting->get('inst_name'))
+        )];
 
         return $this->ui_factory
             ->input()
@@ -842,7 +855,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
             ) . '</a>.';
             if ($this->setting->get('shib_hos_type') === 'external_wayf') {
                 $tpl->setCurrentBlock('shibboleth_login');
-                $tpl->setVariable('TXT_SHIB_LOGIN', $this->lng->txt('login_to_ilias_via_shibboleth'));
+                $tpl->setVariable('TXT_SHIB_LOGIN', $this->instanceLabelForHTML('login_to_instance_via_shibboleth'));
                 $tpl->setVariable('IL_TARGET', $target);
                 $tpl->setVariable('TXT_SHIB_FEDERATION_NAME', $this->setting->get('shib_federation_name'));
                 $tpl->setVariable('TXT_SHIB_LOGIN_BUTTON', $this->setting->get('shib_login_button'));
@@ -863,7 +876,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
                 $tpl->parseCurrentBlock();
             } else {
                 $tpl->setCurrentBlock('shibboleth_wayf_login');
-                $tpl->setVariable('TXT_SHIB_LOGIN', $this->lng->txt('login_to_ilias_via_shibboleth'));
+                $tpl->setVariable('TXT_SHIB_LOGIN', $this->instanceLabelForHTML('login_to_instance_via_shibboleth'));
                 $tpl->setVariable('TXT_SHIB_FEDERATION_NAME', $this->setting->get('shib_federation_name'));
                 $tpl->setVariable(
                     'TXT_SELECT_HOME_ORGANIZATION',
@@ -1265,7 +1278,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
 
         $tpl->setVariable('LPE', $this->getAuthPageEditorHtml(AuthPageEditorContext::LOGOUT));
         $tpl->setVariable('TXT_PAGEHEADLINE', $this->lng->txt('logout'));
-        $tpl->setVariable('TXT_LOGIN', $this->lng->txt('login_to_ilias'));
+        $tpl->setVariable('TXT_LOGIN', $this->instanceLabelForHTML('login_to_instance'));
         $tpl->setVariable(
             'CLIENT_ID',
             '?client_id=' . $client_id . '&cmd=force_login&lang=' . $this->lng->getLangKey()
@@ -1576,13 +1589,13 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
 
         $tpl->addBlockfile('CONTENT', 'content', 'tpl.startup_screen.html', 'components/ILIAS/Init');
 
-        $view_title = $DIC->language()->txt('login_to_ilias');
+        $view_title = InstanceIdentity::format($DIC->language()->txt('login_to_instance'), $DIC->settings()->get('inst_name'));
         if ($a_show_back) {
             // #13400
             $param = 'client_id=' . CLIENT_ID . '&lang=' . $DIC->language()->getLangKey();
 
             $tpl->setCurrentBlock('link_item_bl');
-            $tpl->setVariable('LINK_TXT', $view_title);
+            $tpl->setVariable('LINK_TXT', htmlspecialchars($view_title, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
             $tpl->setVariable('LINK_URL', 'login.php?cmd=force_login&' . $param);
             $tpl->parseCurrentBlock();
 
@@ -1595,7 +1608,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         } elseif ($a_show_logout) {
             $view_title = $DIC->language()->txt('logout');
             $tpl->setCurrentBlock('link_item_bl');
-            $tpl->setVariable('LINK_TXT', $view_title);
+            $tpl->setVariable('LINK_TXT', htmlspecialchars($view_title, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'));
             $tpl->setVariable('LINK_URL', self::logoutUrl());
             $tpl->parseCurrentBlock();
         }
@@ -1613,7 +1626,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
         PageContentProvider::setViewTitle($view_title);
         $short_title = trim($DIC->settings()->get('short_inst_name') ?? '');
         if ($short_title === '') {
-            $short_title = 'ILIAS';
+            $short_title = InstanceIdentity::name($DIC->settings()->get('inst_name'));
         }
         PageContentProvider::setShortTitle($short_title);
 
@@ -1636,8 +1649,8 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
 
             $tpl->setVariable('SAML_SCRIPT_URL', './saml.php' . $return);
             $tpl->setVariable('TXT_LOGIN', $this->lng->txt('saml_log_in'));
-            $tpl->setVariable('LOGIN_TO_ILIAS_VIA_SAML', $this->lng->txt('login_to_ilias_via_saml'));
-            $tpl->setVariable('TXT_SAML_LOGIN_TXT', $this->lng->txt('saml_login_form_txt'));
+            $tpl->setVariable('LOGIN_TO_ILIAS_VIA_SAML', $this->instanceLabelForHTML('login_to_instance_via_saml'));
+            $tpl->setVariable('TXT_SAML_LOGIN_TXT', $this->instanceLabelForHTML('login_to_instance_via_saml'));
             $tpl->setVariable('TXT_SAML_LOGIN_INFO_TXT', $this->lng->txt('saml_login_form_info_txt'));
 
             return $this->substituteLoginPageElements(
@@ -1659,7 +1672,7 @@ class ilStartUpGUI implements ilCtrlBaseClassInterface, ilCtrlSecurityInterface
             $tpl = new ilTemplate('tpl.login_element.html', true, true, 'components/ILIAS/OpenIdConnect');
 
             $this->lng->loadLanguageModule('auth');
-            $tpl->setVariable('TXT_OIDCONNECT_HEADER', $this->lng->txt('auth_oidc_login_element_info'));
+            $tpl->setVariable('TXT_OIDCONNECT_HEADER', $this->instanceLabelForHTML('auth_oidc_login_to_instance'));
 
             $target = $this->initTargetFromQuery();
             $target_str = empty($target) ? '' : ('?target=' . $target);

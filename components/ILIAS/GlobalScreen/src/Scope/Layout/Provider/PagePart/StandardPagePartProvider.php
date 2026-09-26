@@ -182,7 +182,7 @@ class StandardPagePartProvider implements PagePartProvider
         $std_logo = ilUtil::getImagePath("logo/HeaderIcon.svg");
 
         return $this->ui->factory()->image()
-                        ->standard($std_logo, $this->lang->txt('rep_main_page_logo_alt'))
+                        ->standard($std_logo, $this->getLogoAltText())
                         ->withAction($this->getStartingPointAsUrl());
     }
 
@@ -192,10 +192,19 @@ class StandardPagePartProvider implements PagePartProvider
         $responsive_logo = ilUtil::getImagePath("logo/HeaderIconResponsive.svg");
 
         return $this->ui->factory()->image()
-                        ->standard($responsive_logo, $this->lang->txt('rep_main_page_logo_alt'))
+                        ->standard($responsive_logo, $this->getLogoAltText())
                         ->withAction($this->getStartingPointAsUrl());
     }
 
+
+    private function getLogoAltText(): string
+    {
+        global $DIC;
+        return \ILIAS\Administration\InstanceIdentity::format(
+            $this->lang->txt('rep_instance_logo_alt'),
+            $DIC->settings()->get('inst_name')
+        );
+    }
 
     public function getFaviconPath(): string
     {

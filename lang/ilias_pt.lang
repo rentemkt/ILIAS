@@ -2051,6 +2051,7 @@ auth#:#auth_oidc_discover_scopes_info#:#The automatic scope discovery was perfor
 auth#:#auth_oidc_failed#:#Login via OpenID Connect failed###16 03 2023 new variable
 auth#:#auth_oidc_here#:#here###03 09 2026 new variable
 auth#:#auth_oidc_login_element_info#:#Login to ILIAS via OpenID Connect###30 04 2021 new variable
+auth#:#auth_oidc_login_to_instance#:#Entrar em %s com OpenID Connect
 auth#:#auth_oidc_mapping_table#:#Número total de meses apresentados
 auth#:#auth_oidc_profile#:#Os meses adicionais serão apresentados com o seu número total de postings.
 auth#:#auth_oidc_role_info#:#OpenID Connect Attribute::Value (e.g: "roles::employee").###07 02 2020 new variable
@@ -4454,6 +4455,7 @@ common#:#inst_info#:#Modificações guardadas.
 common#:#inst_name#:#Não é possível conectar objetos de recipientes, como categorias, cursos, grupos ou pastas, por razões técnicas. Em vez disso, pode conectar vários objetos individuais dentro desse recipiente a outras áreas ou criar um link de categoria, link de curso ou link de grupo.
 common#:#install#:#Não tem permissão para editar definições de permissões
 common#:#install_local#:#Nenhuma entrada encontrada
+common#:#installation_powered_by#:#%s · Baseado em ILIAS
 common#:#installation_status#:#Installation Status###30 04 2021 new variable
 common#:#installed#:#Não tem permissão para aceder ao item '%s’.
 common#:#installed_local#:#Não tem permissão para escrever
@@ -4585,6 +4587,9 @@ common#:#login_to_ilias#:#Bancos de media
 common#:#login_to_ilias_via_login_form#:#Login to ILIAS###03 09 2026 new variable
 common#:#login_to_ilias_via_saml#:#Login para ILIAS via autenticação SAML
 common#:#login_to_ilias_via_shibboleth#:#Teste bancos de perguntas
+common#:#login_to_instance#:#Entrar em %s
+common#:#login_to_instance_via_saml#:#Entrar em %s com SAML
+common#:#login_to_instance_via_shibboleth#:#Entrar em %s com
 common#:#loginname_already_exists#:#Este nome de login já existe.
 common#:#loginname_settings#:#Links do grupo
 common#:#logout#:#Cursos ECS
@@ -5476,6 +5481,7 @@ common#:#rename_file#:#Mudar o nome ao ficheiro
 common#:#renderer_supported_file_types#:#Tipos de ficheiro suportados
 common#:#renderer_supported_repo_types#:#Objetos ILIAS suportados
 common#:#renderer_type_builtin#:#Integrado
+common#:#rep_instance_logo_alt#:#Logo de %s - ir para a página inicial
 common#:#rep_main_page#:#Carregar
 common#:#rep_main_page_logo_alt#:#Logo ILIAS - to the start page###03 09 2026 new variable
 common#:#repeat_scan#:#A repetir scan de vírus...

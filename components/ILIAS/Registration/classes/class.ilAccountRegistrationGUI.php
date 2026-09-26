@@ -602,7 +602,10 @@ class ilAccountRegistrationGUI
 
             $login_link = $this->ui_renderer->render(
                 $this->ui_factory->link()->standard(
-                    $this->lng->txt('login_to_ilias'),
+                    \ILIAS\Administration\InstanceIdentity::format(
+                        $this->lng->txt('login_to_instance'),
+                        $this->settings->get('inst_name')
+                    ),
                     './login.php?cmd=force_login&lang=' . $this->userObj->getLanguage()
                 )
             );

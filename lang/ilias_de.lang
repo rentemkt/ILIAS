@@ -2067,6 +2067,7 @@ auth#:#auth_oidc_discover_scopes_info#:#Die Auto-Discovery für Scopes wurde vom
 auth#:#auth_oidc_failed#:#Login mittels OpenID Connect fehlgeschlagen
 auth#:#auth_oidc_here#:#hier
 auth#:#auth_oidc_login_element_info#:#Bei ILIAS anmelden über OpenID Connect
+auth#:#auth_oidc_login_to_instance#:#Bei %s über OpenID Connect anmelden
 auth#:#auth_oidc_mapping_table#:#Zuordnung von Datenfeldern der ILIAS-Konten zu OpenID-Connect-Attributen
 auth#:#auth_oidc_profile#:#Zuordnung der Profildaten
 auth#:#auth_oidc_role_info#:#OpenID Connect Attribut::Wert (zum Beispiel: "roles::Mitarbeitende").
@@ -4470,6 +4471,7 @@ common#:#inst_info#:#Installations-Info
 common#:#inst_name#:#Installationsname
 common#:#install#:#Installieren
 common#:#install_local#:#Mit Custom-Sprachdatei installieren
+common#:#installation_powered_by#:#%s · Basierend auf ILIAS
 common#:#installation_status#:#Status Installation
 common#:#installed#:#Installiert
 common#:#installed_local#:#Mit Custom-Sprachdatei installiert
@@ -4601,6 +4603,9 @@ common#:#login_to_ilias#:#Bei ILIAS anmelden
 common#:#login_to_ilias_via_login_form#:#Bei ILIAS anmelden
 common#:#login_to_ilias_via_saml#:#Bei ILIAS via SAML-Authentifizierung anmelden
 common#:#login_to_ilias_via_shibboleth#:#Bei ILIAS anmelden über
+common#:#login_to_instance#:#Bei %s anmelden
+common#:#login_to_instance_via_saml#:#Bei %s über SAML anmelden
+common#:#login_to_instance_via_shibboleth#:#Bei %s anmelden über
 common#:#loginname_already_exists#:#Dieser Anmeldename ist bereits vergeben. Bitte wählen Sie einen anderen Anmeldenamen.
 common#:#loginname_settings#:#Einstellungen Anmeldename
 common#:#logout#:#Abmelden
@@ -5492,6 +5497,7 @@ common#:#rename_file#:#Datei umbenennen
 common#:#renderer_supported_file_types#:#Unterstützte Dateitypen
 common#:#renderer_supported_repo_types#:#Unterstützte ILIAS-Objekte
 common#:#renderer_type_builtin#:#Eingebaut
+common#:#rep_instance_logo_alt#:#Logo von %s - zur Einstiegsseite
 common#:#rep_main_page#:#Einstiegsseite
 common#:#rep_main_page_logo_alt#:#Logo ILIAS - zur Einstiegsseite
 common#:#repeat_scan#:#Wiederhole Virenscan...

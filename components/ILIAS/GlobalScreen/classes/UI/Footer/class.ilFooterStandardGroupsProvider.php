@@ -120,8 +120,10 @@ final class ilFooterStandardGroupsProvider extends AbstractStaticFooterProvider
     #[\Override]
     public function getAdditionalTexts(): array
     {
-        $ilias_version = ILIAS_VERSION;
-        $text = "powered by ILIAS (v{$ilias_version})";
+        $text = \ILIAS\Administration\InstanceIdentity::format(
+            $this->dic->language()->txt('installation_powered_by'),
+            $this->dic->settings()->get('inst_name')
+        );
 
         return [
             $this->item_factory->text(
