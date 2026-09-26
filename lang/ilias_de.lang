@@ -2343,7 +2343,7 @@ bibl#:#bib_default_series#:#Serie
 bibl#:#bib_default_title#:#Titel
 bibl#:#bib_default_type#:#Typ
 bibl#:#bib_default_url#:#URL
-bibl#:#bib_default_volume#:#Auflage
+bibl#:#bib_default_volume#:#Band
 bibl#:#bib_default_year#:#Jahr
 bibl#:#bibl_copy#:#Literaturliste kopieren
 bibl#:#bibl_edit#:#Einstellungen der Literaturliste
@@ -3280,7 +3280,7 @@ cmix#:#conf_user_ident_il_uuid_login_info#:#Die E-Mail-Adresse setzt sich zusamm
 cmix#:#conf_user_ident_il_uuid_random#:#Zufalls-ID@ILIAS-Plattform-ID.ilias
 cmix#:#conf_user_ident_il_uuid_random_info#:#Pro ILIAS-Objekt und ILIAS-Konto wird eine Zufalls-ID erzeugt, die bei jedem Aufruf identisch bleibt. Die E-Mail-Adresse setzt sich zusammen aus der Zufalls-ID und einer eigens generierten Plattform-ID. Ohne Zugriff auf die ILIAS-Datenbank ermöglicht diese Option nur sehr eingeschränkte Rückschlüsse auf ein ILIAS-Konto, da auf Seiten des LRS oder der Ressource Objekt-übergreifende Nutzerprofile praktisch nicht erstellt werden können.
 cmix#:#conf_user_ident_il_uuid_user_id#:#ILIAS-Konto-ID@ILIAS-Plattform-ID.ilias
-cmix#:#conf_user_ident_il_uuid_user_id_info#:#Die E-Mail-Adresse setzt sich zusammen aus der ID eines externen Kontos und einer eigens generierten Plattform-ID. Diese Option ermöglicht Rückschlüsse auf die Person.
+cmix#:#conf_user_ident_il_uuid_user_id_info#:#Die E-Mail-Adresse setzt sich zusammen aus der numerischen ILIAS-Benutzer-ID und einer eigens generierten Plattform-ID. Diese Option ermöglicht Rückschlüsse auf die Person.
 cmix#:#conf_user_ident_info#:#Standard ist häufig die E-Mail-Adresse. Die eindeutige ILIAS-Plattform-ID lautet:
 cmix#:#conf_user_ident_real_email#:#Hinterlegte E-Mail-Adresse
 cmix#:#conf_user_ident_real_email_info#:#Diese Option ermöglicht Rückschlüsse auf das ILIAS-Konto. Achtung: eine E-Mail-Adresse kann von mehreren Benutzern verwendet werden!
@@ -6356,7 +6356,7 @@ content#:#cont_click_next_point#:#Bitte klicken Sie auf die nächste Ecke des Po
 content#:#cont_click_starting_point#:#Bitte klicken Sie auf den Startpunkt des Polygons.
 content#:#cont_click_tl_corner#:#Bitte klicken Sie in die obere linke Ecke des gewünschten Bereichs
 content#:#cont_code_import_file#:#Import
-content#:#cont_code_manual_editing#:#Manual Editing
+content#:#cont_code_manual_editing#:#Manuelle Eingabe
 content#:#cont_colspan#:#Verbund Spalte
 content#:#cont_commented_by#:#Kommentiert von
 content#:#cont_comments#:#Kommentare erlauben
@@ -6994,7 +6994,7 @@ content#:#cont_purpose#:#Verwendung
 content#:#cont_qover_list_wrong_q#:#Liste der falsch beantworteten Fragen
 content#:#cont_qover_list_wrong_q_info#:#Es wird eine Liste aller noch nicht oder falsch beantworteten Fragen gezeigt.
 content#:#cont_qover_short_message#:#Fragenstatus
-content#:#cont_qover_short_message_info#:#Eine Meldung "Sie haben x von y Fragen noch nicht oder falsch beantwortet" wird angezeigt.
+content#:#cont_qover_short_message_info#:#Eine Meldung „Sie haben x von y Fragen dieser Lerneinheit richtig beantwortet.“ wird angezeigt.
 content#:#cont_qtries#:#Anzahl der Versuche für Fragen
 content#:#cont_qtries_info#:#Standardwert "Anzahl der Versuche" für neu angelegte Fragen.
 content#:#cont_question#:#Frage
@@ -7531,9 +7531,9 @@ crs#:#crs_added_starters#:#Die ausgewählten Objekte wurden zugeordnet.
 crs#:#crs_added_to_list#:#Sie sind in die Warteliste aufgenommen worden.<br />Sie haben Platz %s auf der Warteliste.
 crs#:#crs_admin#:#Kursadministration
 crs#:#crs_administrators#:#Kursadministration
-crs#:#crs_admission_link_failure_availability#:#Kein Beitritt möglich. Der Kurs ist online.
+crs#:#crs_admission_link_failure_availability#:#Kein Beitritt möglich. Der Kurs liegt außerhalb seines Verfügbarkeitszeitraums.
 crs#:#crs_admission_link_failure_invalid_code#:#Kein Beitritt möglich. Der Link ist nicht gültig.
-crs#:#crs_admission_link_failure_membership_limited#:#Kein Beitritt möglich. Die Mitgliederzahl der Gruppe ist begrenzt.
+crs#:#crs_admission_link_failure_membership_limited#:#Kein Beitritt möglich. Die Mitgliederzahl des Kurses ist begrenzt.
 crs#:#crs_admission_link_failure_offline#:#Kein Beitritt möglich. Der Kurs ist offline.
 crs#:#crs_admission_link_failure_registration_period#:#Kein Beitritt möglich. Die Anmeldung zum Kurs liegt ausserhalb des Beitrittszeitraumes.
 crs#:#crs_admission_link_success_registration#:#Erfolgreich dem Kurs „%s“ beigetreten.
@@ -8390,7 +8390,7 @@ dateplaner#:#cal_created_milestone#:#Der Meilenstein wurde angelegt.
 dateplaner#:#cal_created_milestone_resp_q#:#Der Meilenstein wurde angelegt. Bitte wählen Sie die Mitglieder aus, die für den Meilenstein verantwortlich sein sollen.
 dateplaner#:#cal_cronjob_remote_description#:#Wenn aktiviert, werden Termine des Kalendertyps "Web-Kalender" automatisch nach dem vorgegeben Zeitintervall synchronisiert.
 dateplaner#:#cal_cronjob_remote_title#:#Synchronisierung externer Kalender
-dateplaner#:#cal_crs_info#:#Course Information
+dateplaner#:#cal_crs_info#:#Kursinformationen
 dateplaner#:#cal_crs_new_notification_body#:#ein neuer Termin ist im Kurs „%s“ angelegt worden.
 dateplaner#:#cal_crs_new_notification_sub#:#Neuer Termin in Kurs „%s“
 dateplaner#:#cal_crs_notification_body#:#es erfolgte eine Terminänderung im Kurs „%s“.
@@ -9790,7 +9790,7 @@ exc#:#exc_x_of_y#:#von
 exc#:#exc_your_text#:#Ihr Text
 exc#:#feedback_from#:#Feedback von
 exc#:#feedback_given#:#Gegebenes Feedback
-exc#:#feedback_received#:#Gegebenes Feedback
+exc#:#feedback_received#:#Erhaltenes Feedback
 exc#:#fiter_no_results#:#Zu den aktuellen Einstellungen des Filters passen kein Abgaben.
 exc#:#grade_evaluate#:#Bewerten/Benoten
 exc#:#not_yet#:#noch nicht
@@ -10038,8 +10038,8 @@ forum#:#adm_save_drafts#:#Entwürfe aktivieren
 forum#:#adm_save_drafts_desc#:#Wenn aktiviert, können angemeldete Benutzer Beiträge in Foren als Entwurf speichern
 forum#:#allow_file_upload_desc#:#Wenn aktiviert, können in diesem Forum Dateien an Forenbeiträge angehängt werden.
 forum#:#ascending_order#:#Neueste Beiträge unten
-forum#:#autosave_draft_info#:#<span class="asterisk">Dieser Entwurf wird alle %s Sekunden automatisch gespeichert.<span/>
-forum#:#autosave_post_draft_info#:#<span class="asterisk">Dieser Beitrag wird alle %s Sekunden automatisch als Entwurf gespeichert.<span/>
+forum#:#autosave_draft_info#:#<span class="asterisk">Dieser Entwurf wird alle %s Sekunden automatisch gespeichert.</span>
+forum#:#autosave_post_draft_info#:#<span class="asterisk">Dieser Beitrag wird alle %s Sekunden automatisch als Entwurf gespeichert.</span>
 forum#:#close_topics#:#Schließen
 forum#:#content_censored_post#:#Inhalt des zensierten Beitrags:
 forum#:#content_deleted_post#:#Inhalt des gelöschten Beitrags:
@@ -11007,11 +11007,11 @@ ldoc#:#ldoc_agreement_documents_tab_label#:#Dokumente
 ldoc#:#ldoc_agreement_exists#:#Vorhanden
 ldoc#:#ldoc_agreement_missing#:#Nicht vorhanden
 ldoc#:#ldoc_crit_type_usr_country#:#Benutzerland
-ldoc#:#ldoc_crit_type_usr_country_info#:#Das Dokument muss akzeptiert werden, wenn beim ersten Login dieses Land gewählt wurde. Eine nachträgliche Änderung der Benutzersprache führt nicht automatisch zur Vorlage eines neuen Dokuments.
+ldoc#:#ldoc_crit_type_usr_country_info#:#Das Dokument muss akzeptiert werden, wenn beim ersten Login dieses Land gewählt wurde. Nachträgliche Änderungen des Landes im Benutzerprofil werden beim Login nur dann erneut geprüft, wenn „Erneutes Prüfen der Vorlagekriterien beim Login“ aktiviert ist.
 ldoc#:#ldoc_crit_type_usr_global_role#:#Globale Rolle
-ldoc#:#ldoc_crit_type_usr_global_role_info#:#Das Dokument muss akzeptiert werden, wenn ein Benutzer beim ersten Login in diese Rolle eingetragen ist. Eine nachträgliche Änderung der Rolle führt nicht automatisch zur Vorlage eines neuen Dokuments.
+ldoc#:#ldoc_crit_type_usr_global_role_info#:#Das Dokument muss akzeptiert werden, wenn ein Benutzer beim ersten Login in diese Rolle eingetragen ist. Nachträgliche Änderungen der Rolle werden beim Login nur dann erneut geprüft, wenn „Erneutes Prüfen der Vorlagekriterien beim Login“ aktiviert ist.
 ldoc#:#ldoc_crit_type_usr_language#:#Benutzersprache
-ldoc#:#ldoc_crit_type_usr_language_info#:#Das Dokument muss akzeptiert werden, wenn beim ersten Login diese Sprache gewählt wurde. Eine nachträgliche Änderung der Benutzersprache führt nicht automatisch zur Vorlage eines neuen Dokuments.
+ldoc#:#ldoc_crit_type_usr_language_info#:#Das Dokument muss akzeptiert werden, wenn beim ersten Login diese Sprache gewählt wurde. Nachträgliche Änderungen der Benutzersprache werden beim Login nur dann erneut geprüft, wenn „Erneutes Prüfen der Vorlagekriterien beim Login“ aktiviert ist.
 ldoc#:#ldoc_criterion_assignment_cannot_match#:#Sie können das Vorlagekriterium mit der entsprechenden Konfiguration nicht zuweisen. Durch ein anderes Vorlagekriterium wird das Dokument niemals zutreffen können.
 ldoc#:#ldoc_criterion_assignment_must_be_unique#:#Sie können das Vorlagekriterium mit der entsprechenden Konfiguration nicht zuweisen. Es existiert bereits eine identische Zuweisung.
 ldoc#:#ldoc_deleted_documents_p#:#Die gewählten Dokumente wurden gelöscht.
@@ -11171,7 +11171,7 @@ lso#:#first_access#:#Erster Zugriff
 lso#:#last_visited_step#:#Zuletzt besuchter Schritt
 lso#:#learner_view#:#Übersicht
 lso#:#lp_not_relevant_post_cond#:#für Fortfahren aktuell nicht maßgeblich
-lso#:#lso_activation_online_info#:#Nur wenn die Lernsequenz online geschaltet ist, können Personen beitreten und Mitglieder auf die Lernsequenz zugreifen. Wenn nicht, ist die Lernsequenz nur für Administration und Rollen mit dem Recht „Einstellungen bearbeiten“ verfügbar.
+lso#:#lso_activation_online_info#:#Nur wenn die Lernsequenz online geschaltet ist, können Personen beitreten und Mitglieder auf die Lernsequenz zugreifen. Wenn nicht, ist der Zugriff auf Personen mit mindestens einem der folgenden Rechte beschränkt: „Einstellungen bearbeiten“, „Teilnehmer bearbeiten“ oder „Lernfortschrittseinstellungen bearbeiten“.
 lso#:#lso_at_least_one_admin#:#Dieser Lernsequenz muss mindestens eine Person mit der Rolle „Lernsequenzadministration“ zugeordnet sein.
 lso#:#lso_edit_permission#:#Rechteeinstellungen ändern
 lso#:#lso_header_delete_members#:#Sie möchten folgende Mitglieder aus der Lernsequenz austragen?
@@ -11385,7 +11385,7 @@ lti#:#lti_con_grade_synchronization#:#Assignment and Grade Services###04 12 2025
 lti#:#lti_con_grade_synchronization_info#:#Das LTI-Tool muss 'Assignment and Grade Services' anbieten.###04 12 2025 new variable
 lti#:#lti_con_initiate_login_url#:#Initiate Login URL
 lti#:#lti_con_key_type#:#Typ des öffentlichen Schlüssels
-lti#:#lti_con_key_type_jwk#:#URL (Json Web Token)
+lti#:#lti_con_key_type_jwk#:#URL (JSON Web Key Set)
 lti#:#lti_con_key_type_jwk_url#:#URL
 lti#:#lti_con_key_type_rsa#:#RSA-Schlüssel
 lti#:#lti_con_key_type_rsa_public_key#:#Öffentlicher Schlüssel
@@ -11625,7 +11625,7 @@ mail#:#mail_create_tpl#:#Textvorlage erstellen
 mail#:#mail_cronjob_notification_info#:#Aktivierung regelmäßiger Benachrichtigungen über neue Mails.
 mail#:#mail_crs_list_members_not_available#:#Die Mitglieder der markierten Kurse können nicht aufgelistet werden.
 mail#:#mail_crs_list_members_not_available_for_at_least_one_crs#:#Die Mitglieder von mindestens einem gewählten Kurs können nicht aufgelistet werden.
-mail#:#mail_crs_roles#:#alle Personen mit folgenden lokalen Rollen. Label is now generalised for all components that support ‘mail to members‘
+mail#:#mail_crs_roles#:#alle Personen mit folgenden lokalen Rollen
 mail#:#mail_deleted#:#Die Mail(s) wurden gelöscht
 mail#:#mail_deleted_entry#:#Die Einträge wurden gelöscht
 mail#:#mail_download_attachment#:#Anhang herunterladen
@@ -11684,7 +11684,7 @@ mail#:#mail_form_placeholders_label#:#Verfügbare Platzhalter
 mail#:#mail_generic_rcp_error#:#Beim Validieren des „An”-Feldes ist ein Fehler aufgetreten: %1$s
 mail#:#mail_global_reply_to_addr#:#Reply-To
 mail#:#mail_global_reply_to_addr_info#:#Bitte tragen Sie hier die gewünschte 'Reply-To'-E-Mail-Adresse ein.
-mail#:#mail_grp_roles#:#alle Personen mit folgenden lokalen Rollen. Label is now generalised for all components that support ‘mail to members‘
+mail#:#mail_grp_roles#:#alle Personen mit folgenden lokalen Rollen
 mail#:#mail_hint_add_placeholder_x#:#Füge Platzhalter „%s“ in den Textkörper der Nachricht ein.
 mail#:#mail_inbox_external_delivery_only_info#:#Ihr Konto ist so konfiguriert, dass E-Mails an Ihre E-Mail-Adresse gesendet werden. <br>Sie können E-Mails in diesem Posteingang nur sehen, wenn Ihr Konto so konfiguriert ist, dass diese (auch) lokal empfangen werden.
 mail#:#mail_incoming#:#Maileingang
@@ -11787,7 +11787,7 @@ mail#:#mail_serial_letter_placeholders#:#Platzhalter für Serienbrief
 mail#:#mail_settings_external_frm_head#:#Externe E-Mails
 mail#:#mail_settings_external_tab#:#Extern
 mail#:#mail_settings_general_tab#:#Allgemein
-mail#:#mail_settings_incoming_type_see_also#:#Eine weitere Möglichkeit, die Empfangsart für die Benutzer zu ändern, haben Sie <a href=„%s“>hier</a>.
+mail#:#mail_settings_incoming_type_see_also#:#Eine weitere Möglichkeit, die Empfangsart für die Benutzer zu ändern, haben Sie <a href="%s">hier</a>.
 mail#:#mail_settings_system_frm_head#:#System E-Mails
 mail#:#mail_settings_user_frm_head#:#Benutzer E-Mails
 mail#:#mail_smtp_encryption#:#Verschlüsselung
@@ -11977,8 +11977,8 @@ mcst#:#mcst_videoportable_title#:#Zusätzliche Video-Datei für portable Geräte
 mcst#:#mcst_view_abandoned#:#Die aktuell gewählte Ansicht wird nicht mehr unterstützt. Bitte wählen Sie in den Einstellungen einen andere Ansicht aus.
 mcst#:#mcst_viewmode#:#Ansicht
 mcst#:#mcst_visibility_info#:#Öffentliche Objekte sind über RSS ohne jegliche Authentifizierung zugänglich.
-mcst#:#mcst_visibility_public#:#Angemeldete Benutzer
-mcst#:#mcst_visibility_users#:#Öffentlich
+mcst#:#mcst_visibility_public#:#Öffentlich
+mcst#:#mcst_visibility_users#:#Angemeldete Benutzer
 mcst#:#mcst_watched#:#angesehen
 mcst#:#mcst_webfeed#:#RSS-Webfeed
 mem#:#mem_period_without_time#:#ohne Uhrzeitangabe
@@ -13349,7 +13349,7 @@ orgu#:#orgu_type_msg_deletion_prevented#:#Löschen verhindert durch folgende Plu
 orgu#:#orgu_type_msg_error_custom_icon#:#Icon konnte nicht gespeichert werden
 orgu#:#orgu_type_msg_missing_title#:#Es muss ein Titel für die Standardsprache angegeben werden
 orgu#:#orgu_type_msg_missing_title_default_language#:#Standardsprache und der Titel für die Standardsprache müssen ausgefüllt werden
-orgu#:#orgu_type_msg_setting_default_lang_prevented#:#'%' als Standardsprache nicht möglich, verhindert durch folgende Plugins: %s
+orgu#:#orgu_type_msg_setting_default_lang_prevented#:#'%s' als Standardsprache nicht möglich, verhindert durch folgende Plugins: %s
 orgu#:#orgu_type_msg_setting_member_prevented#:#Zuweisen von „%s“ verhindert durch folgende Plugins: %s
 orgu#:#orgu_type_msg_unable_delete#:#Der Typ kann nicht gelöscht werden, da er noch folgenden Organisationseinheiten zugewiesen ist: %s
 orgu#:#orgu_type_msg_updating_prevented#:#Aktualisieren des Objekts verhindert durch folgende Plugins: %s
@@ -15618,7 +15618,7 @@ search#:#search_mime_powerpoint#:#Powerpoint-Dateien
 search#:#search_mime_word#:#Word-Dateien
 search#:#search_minimum_info#:#Die Suchbegriffe müssen mindestens %s Zeichen lang sein.
 search#:#search_minimum_three#:#Die Suchbegriffe müssen mindestens 3 Zeichen lang sein.
-search#:#search_newer_than#:#Objekte erstellt vor dem...
+search#:#search_newer_than#:#Objekte erstellt nach dem...
 search#:#search_no_connection_lucene#:#Es kann keine Verbindung zum Lucene-Server hergestellt werden.
 search#:#search_no_further_match#:#Ihre Suche ergab keine weiteren Treffer.
 search#:#search_no_match#:#Ihre Suche ergab keine Treffer.
@@ -15685,7 +15685,7 @@ sess#:#sess_mail_all_info#:#Alle Personen, die sich angemeldet oder teilgenommen
 sess#:#sess_mail_context_participant_info#:#Mails, die aus dem Reiter „Teilnahmen“ oder „Lernfortschritt“ einer Sitzung  versendet werden
 sess#:#sess_mail_context_participant_title#:#Sitzung: Mail an Personen, die angemeldet sind oder teilgenommen haben
 sess#:#sess_mail_permanent_link#:#Wählen Sie den folgenden Link, um auf den Sitzungsinhalt zuzugreifen:
-sess#:#sess_mail_permanent_link_participants#:#Wählen Sie den folgenden Link, um auf den Sitzungsinhalt zuzugreifen:
+sess#:#sess_mail_permanent_link_participants#:#Wählen Sie den folgenden Link, um die Teilnehmenden der Sitzung zu bearbeiten:
 sess#:#sess_mail_sub_acc_bod#:#Sie wurden für die Teilnahme am Sitzungstermin „%s“ zugelassen.
 sess#:#sess_mail_sub_acc_sub#:#Teilnahme an Sitzung „%s“
 sess#:#sess_mail_sub_dec_bod#:#Ihr Antrag auf Teilnahme an der Sitzung „%s“ ist abgelehnt worden.
@@ -16050,7 +16050,7 @@ style#:#directory_created#:#Ordner erstellt:
 style#:#documentation#:#Dokumentation
 style#:#edit_by_color#:#Bearbeitung nach Farbe
 style#:#edit_by_icon#:#Bearbeitung nach Icon
-style#:#enable_system_styles_management_no_write_perm#:#'System-Styles-Management' ist aktiviert. ILIAS hat aber keinen Schreibzugriff auf das Customizing/global/skin Verzeichnis. Es können deshalb keine neuen Styles erstellt/editiert werden.
+style#:#enable_system_styles_management_no_write_perm#:#'System-Styles-Management' ist aktiviert. ILIAS hat aber keinen Schreibzugriff auf das public/Customizing/skin Verzeichnis. Es können deshalb keine neuen Styles erstellt/editiert werden.
 style#:#entries_reloaded#:#Alle Einträge wurden aktualisiert
 style#:#file_deleted#:#Folgende Datei wurde gelöscht:
 style#:#font_dir#:#Schrift-Ordner
@@ -16570,8 +16570,8 @@ survey#:#end_date#:#Enddatum
 survey#:#end_date_reached#:#Sie können die Umfrage nicht mehr starten. Das letzte zulässige Datum wurde überschritten!
 survey#:#enter_anonymous_id#:#Zugangsschlüssel
 survey#:#enter_valid_number_of_codes#:#Bitte geben Sie eine gültige Zahl ein, um Zugangscodes zu generieren!
-survey#:#err_external_rcp_no_email#:#Die Importdaten müssen mindestens eine Spalte „E-Mail“ enthalten, d. h. die Spaltenüberschrift „E-Mail“ in der ersten Zeile und die E-Mail-Adressen in den folgenden Zeilen.
-survey#:#err_external_rcp_no_email_column#:#Die Importdaten müssen mindestens eine Spalte „E-Mail“ enthalten, d. h. die Spaltenüberschrift „E-Mail“ in der ersten Zeile und die E-Mail-Adressen in den folgenden Zeilen.
+survey#:#err_external_rcp_no_email#:#Die Importdaten müssen mindestens eine Spalte „email“ enthalten, d. h. die Spaltenüberschrift „email“ in der ersten Zeile und die E-Mail-Adressen in den folgenden Zeilen.
+survey#:#err_external_rcp_no_email_column#:#Die Importdaten müssen mindestens eine Spalte „email“ enthalten, d. h. die Spaltenüberschrift „email“ in der ersten Zeile und die E-Mail-Adressen in den folgenden Zeilen.
 survey#:#err_maxvaluegeminvalue#:#Der Maximalwert muss gleich oder größer als der Minimalwert sein. Er darf nicht größer sein als die Gesamtzahl der möglichen Antworten.
 survey#:#err_minvalueganswers#:#Der Minimalwert darf nicht größer sein als die Gesamtzahl der möglichen Antworten.
 survey#:#err_no_exact_answers#:#Bitte wählen Sie genau %s Antwort(en) aus.
@@ -16594,9 +16594,9 @@ survey#:#export_title_label#:#Titel und Label exportieren
 survey#:#export_title_only#:#Nur Titel exportieren
 survey#:#external_recipients_imported#:#Die Daten wurden importiert.
 survey#:#externalmails#:#Importdatei
-survey#:#externalmails_info#:#Die Importdatei muss eine CSV-Datei sein, deren Spalten durch Semikolons getrennt sind. Die erste Zeile sollte die Spaltenüberschriften enthalten. Die Datei muss mindestens eine Spalte „E-Mail” mit den E-Mail-Adressen der vorgesehenen Empfänger enthalten. Auf diese Weise können Sie Umfrage-Zugangscodes an Personen senden, die kein ILIAS-Konto haben.
+survey#:#externalmails_info#:#Die Importdatei muss eine CSV-Datei sein, deren Spalten durch Semikolons getrennt sind. Die erste Zeile sollte die Spaltenüberschriften enthalten. Die Datei muss mindestens eine Spalte „email“ mit den E-Mail-Adressen der vorgesehenen Empfänger enthalten. Auf diese Weise können Sie Umfrage-Zugangscodes an Personen senden, die kein ILIAS-Konto haben.
 survey#:#externaltext#:#Text importieren
-survey#:#externaltext_info#:#Der importierte Text muss in Zeilen und Spalten angeordnet sein, wobei die Spalten durch ein Semikolon getrennt sind. Die erste Zeile sollte die Spaltenüberschriften enthalten. Die Datei muss mindestens eine Spalte „E-Mail” enthalten, in der die E-Mail-Adressen der vorgesehenen Empfänger aufgeführt sind. Auf diese Weise können Sie Umfrage-Zugangscodes an Personen senden, die kein ILIAS-Konto haben.
+survey#:#externaltext_info#:#Der importierte Text muss in Zeilen und Spalten angeordnet sein, wobei die Spalten durch ein Semikolon getrennt sind. Die erste Zeile sollte die Spaltenüberschriften enthalten. Die Datei muss mindestens eine Spalte „email“ enthalten, in der die E-Mail-Adressen der vorgesehenen Empfänger aufgeführt sind. Auf diese Weise können Sie Umfrage-Zugangscodes an Personen senden, die kein ILIAS-Konto haben.
 survey#:#filter_all_question_types#:#Alle Fragetypen
 survey#:#filter_all_questionpools#:#Alle Fragenpools
 survey#:#finished_mail_subject#:#Die Umfrage „%s“ wurde beendet
@@ -16787,7 +16787,7 @@ survey#:#survey_360_rate_other_appraisee#:#Feedback geben
 survey#:#survey_360_rater_finished#:#Umfrage abgeschlossen
 survey#:#survey_360_rater_mail_sent#:#Mail versendet
 survey#:#survey_360_rater_message_content_anonymous#:#Inhalt (Anonym)
-survey#:#survey_360_rater_message_content_anonymous_default#:#Ihr Zugangscode für die Umfrage lautet [Code]. Starten Sie die Umfrage über die URL [URL].
+survey#:#survey_360_rater_message_content_anonymous_default#:#Ihr Zugangscode für die Umfrage lautet [code]. Starten Sie die Umfrage über die URL [url].
 survey#:#survey_360_rater_message_content_registered#:#Inhalt (Registrierte Benutzer)
 survey#:#survey_360_rater_message_content_registered_default#:#Sie können die Umfrage in Ihrem Web-Browser mit folgender URL starten: [url].
 survey#:#survey_360_rater_subject_default#:#Sie wurden als Feedback-Geber zu einer 360°-Umfrage eingeladen.
@@ -16796,7 +16796,7 @@ survey#:#survey_360_raters_finished#:#Bewertungen abgeschlossen
 survey#:#survey_360_remove_appraisees#:#Feedback-Nehmer entfernen
 survey#:#survey_360_results#:#Zugang zu Ergebnissen für Feedback-Nehmer
 survey#:#survey_360_results_all#:#Alle Feedbacks
-survey#:#survey_360_results_all_info#:#Alle Feedback-Geber innerhalb dieser 360°-Umfrage können alle Rückmeldungen einsehen. Dazu gehören nicht nur ihre eigenen Rückmeldungen, sondern auch die Rückmeldungen, die anderen Feedback-Nehmern gegeben wurden.
+survey#:#survey_360_results_all_info#:#Alle Feedback-Nehmer innerhalb dieser 360°-Umfrage können alle Rückmeldungen aller Feedback-Geber einsehen. Dazu gehören nicht nur die Rückmeldungen zu ihrer eigenen Person, sondern auch die Rückmeldungen zu anderen Feedback-Nehmern.
 survey#:#survey_360_results_none#:#Kein Zugang
 survey#:#survey_360_results_none_info#:#Die Feedback-Nehmer haben keinen Zugriff auf das Feedback.
 survey#:#survey_360_results_own#:#Zugriff auf Feedback von eigenen Feedback-Gebern

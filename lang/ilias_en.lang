@@ -2218,7 +2218,6 @@ background_tasks#:#ui_msg_no_files_found#:#No files have been found. The downloa
 background_tasks#:#ui_msg_num_files#:#%s file(-s) were detected for download, do you want to continue?
 background_tasks#:#ui_msg_sum_file_sizes#:#The total download size before creating the zip-folder is %s. Do you want to continue?
 background_tasks#:#waiting#:#Waiting
-badge#:##:#Are you sure you want to delete the following badges and all their respective assignments?
 badge#:#awarded_by#:#Awarded By
 badge#:#badge_activity_badges#:#Activity Badges
 badge#:#badge_add_template#:#Add Template
@@ -2269,8 +2268,8 @@ badge#:#badge_sort_activity_badges_first#:#Activity Badges First
 badge#:#badge_sort_activity_badges_last#:#Activity Badges Last
 badge#:#badge_sort_added_to_profile_last#:#Added To Profile First
 badge#:#badge_sort_excluded_from_profile_first#:#Excluded From Profile First
-badge#:#badge_sort_manual_awarding_first#:#Badges mit manueller Vergabe zuerst
-badge#:#badge_sort_manual_awarding_last#:#Badges mit manueller Vergabe zuletzt
+badge#:#badge_sort_manual_awarding_first#:#Manually awarded badges first
+badge#:#badge_sort_manual_awarding_last#:#Manually awarded badges last
 badge#:#badge_subtype_auto#:#Automatic
 badge#:#badge_subtype_manual#:#Manual
 badge#:#badge_template_deletion_confirmation#:#Are you sure you want to delete the following image templates?
@@ -2393,7 +2392,7 @@ bibl#:#override_entries#:#Override Entries
 bibl#:#replace_bibliography_file#:#Replace Bibliography File
 bibl#:#replace_bibliography_file_info#:#The current bibliography file will be replaced by the new file. All existing entries from the current file will be deleted.
 bibl#:#ris#:#Ris
-bibl#:#ris_default_a2#:#Location in Archives
+bibl#:#ris_default_a2#:#Secondary Author
 bibl#:#ris_default_au#:#Author
 bibl#:#ris_default_cy#:#Place Published
 bibl#:#ris_default_ep#:#Ending Page Number
@@ -2925,7 +2924,7 @@ certificate#:#cmix_cert_ph_reached_score#:#Score achieved in percent
 certificate#:#default_background_info#:#This background image will be used as the default background for all certificates unless a different image is uploaded when creating a certificate for a specific object.
 certificate#:#download_certificate#:#Download Certificate
 certificate#:#learning_progress_deactivated#:#Learning progress for this object is currently deactivated. In order to edit the certificate template and for users to be able to obtain certificates, learning progress for this object needs to be activated via Learning Progress » Settings.
-certificate#:#lti_cert_ph_mastery_score#:#Score achieved in percent
+certificate#:#lti_cert_ph_mastery_score#:#Mastery score in percent
 certificate#:#lti_cert_ph_object_description#:#Description
 certificate#:#lti_cert_ph_object_title#:#Title of the LTI Consumer Object
 certificate#:#lti_cert_ph_reached_score#:#Reached score as percentage
@@ -2986,8 +2985,8 @@ chatroom#:#chat_log_info#:#Please define an absolute server path to the chat ser
 chatroom#:#chat_log_level#:#Log Level
 chatroom#:#chat_mainroom#:#Main Room
 chatroom#:#chat_message#:#Message
-chatroom#:#chat_message_display#:#Options
-chatroom#:#chat_message_options#:#Display
+chatroom#:#chat_message_display#:#Display
+chatroom#:#chat_message_options#:#Options
 chatroom#:#chat_no_use_typing_broadcast#:#Typing will not be broadcasted
 chatroom#:#chat_not_use_osc#:#Not Using On-Screen-Chat
 chatroom#:#chat_osc_accept_msg#:#Allow On-Screen Chat Conversations
@@ -3281,7 +3280,7 @@ cmix#:#conf_user_ident_il_uuid_login_info#:#This is identical to each call, but 
 cmix#:#conf_user_ident_il_uuid_random#:#Random ID combined with a unique ILIAS platform ID formatted as an E-Mail address
 cmix#:#conf_user_ident_il_uuid_random_info#:#For each ILIAS object and ILIAS user a random ID is generated which remains identical for each call. Conclusions about a user are very limited because it is practically impossible to create user profiles across objects.
 cmix#:#conf_user_ident_il_uuid_user_id#:#ILIAS user id combined with a unique ILIAS platform id formatted as an E-Mail adress
-cmix#:#conf_user_ident_il_uuid_user_id_info#:#This is identical to each call, but doesn't allow a direct conclusion about the ILIAS user.
+cmix#:#conf_user_ident_il_uuid_user_id_info#:#The e-mail address is generated from the numeric ILIAS user ID and the platform ID. It remains the same on each launch and may allow the user to be identified.
 cmix#:#conf_user_ident_info#:#Standard is frequently the email address. The unique ILIAS platform id is:
 cmix#:#conf_user_ident_real_email#:#E-Mail Address
 cmix#:#conf_user_ident_real_email_info#:#Sends E-Mail Address of user as identification (Warning: an E-Mail Address might be used by multiple users!)
@@ -3357,7 +3356,7 @@ cmix#:#lrs_authentication#:#Authentication
 cmix#:#no_substatements_info#:#With this option - which is only available for the ILIAS LRS proxy - the storage of subordinate statements can be suppressed. This can for example affect the answering of single tasks in a test. The content is informed that the statements would have been saved.
 cmix#:#no_substatements_label#:#Do not store substatements
 cmix#:#online_info#:#This makes the object visible and usable for the users.
-cmix#:#only_moveon_info#:#With this option, which is only available for the ILIAS LRS proxy, only statements with defined verbs are stored in the Learning Record Store (WhiteList). The content is informed that the statements would have been saved. This usually ensures the expiration date but should be discussed with the content provider.
+cmix#:#only_moveon_info#:#With this option, which is only available for the ILIAS LRS proxy, only statements with defined verbs are stored in the Learning Record Store (WhiteList). The content is informed that the statements would have been saved. This usually ensures that the content continues to function but should be discussed with the content provider.
 cmix#:#only_moveon_label#:#Save learning success data only
 cmix#:#passed_info#:#Indicates the actor successfully passed an activity to a level of predetermined satisfaction.
 cmix#:#passed_label#:#Statements with the verb 'passed'
@@ -3737,7 +3736,7 @@ common#:#catr_settings#:#Category Link Settings
 common#:#certificate#:#Certificate
 common#:#certificate_file_already_exists_error#:#The certificate file already exists in the file system.
 common#:#certificate_file_input_output_error#:#The certificate file was found but couldn't be deleted because of internal errors. Please contact your administrator.
-common#:#certificate_file_not_found_error#:#The certificate file doesn't exist in the file system anymore. Die Zertikatsdatei wurde im Dateisystem nicht mehr gefunden.
+common#:#certificate_file_not_found_error#:#The certificate file no longer exists in the file system.
 common#:#certificate_persistent_option#:#Certificates of Achievements
 common#:#certificate_selection#:#Origin of Certificates
 common#:#certificate_workspace_option#:#Certificates of Personal Resources
@@ -4605,7 +4604,7 @@ common#:#login_to_ilias_via_shibboleth#:#Login to ILIAS via
 common#:#loginname_already_exists#:#This login name already exists.
 common#:#loginname_settings#:#Login Name Settings
 common#:#logout#:#Logout
-common#:#logout_text#:#You logged off from ILIAS. Your session has been closed.
+common#:#logout_text#:#You have signed out. Your session has been closed.
 common#:#logs#:#Log Data
 common#:#love#:#Love
 common#:#lres#:#Learning Resources
@@ -4619,8 +4618,8 @@ common#:#lso_edit#:#Edit Learning Sequence
 common#:#lso_import#:#Import Learning Sequence
 common#:#lso_new#:#New Learning Sequence
 common#:#lso_wizard_page#:#Copy Learning Sequence (Step 2/2)
-common#:#lti_outcome#:#LTI Lernfortschritt Benachrichtigung
-common#:#lti_outcome_info#:#Sendet den Lernfortschrittstatus von LTI-Benutzern an LTI Tool Consumer.
+common#:#lti_outcome#:#LTI Learning Progress Notification
+common#:#lti_outcome_info#:#Sends the learning progress status of LTI users to the LTI tool consumer.
 common#:#mail#:#Mail
 common#:#mail_addressbook#:#Contacts
 common#:#mail_at_the_ilias_installation#:#You received %1$s new mail at the ILIAS-Installation %2$s
@@ -6051,7 +6050,7 @@ common#:#webdav_problem_info_duplicate#:#There is a file with the same title as 
 common#:#webdav_pwd_instruction#:#We suggest to create a local password for opening the repository as web folder.<br />This password is only required for the web folder functionality.
 common#:#webdav_pwd_instruction_success#:#A new local password has been created. You can now open the repository as web folder.
 common#:#webdav_sure_delete_documents_s#:#Are you sure you want to delete the Mount Instructions with the following title:
-common#:#webdav_tbl_docs_head_title#:#Dokument title
+common#:#webdav_tbl_docs_head_title#:#Document Title
 common#:#webdav_tbl_docs_title#:#List of uploaded WebDAV Mount Instructions
 common#:#webdav_upload_instructions#:#Upload Instructions
 common#:#webfolder_dir_info#:#You got here, because your browser can't open web folders. Read the <a href="%1$s">instructions for opening web folders</a>.
@@ -6357,7 +6356,7 @@ content#:#cont_click_next_point#:#Please click on the next point of the polygon.
 content#:#cont_click_starting_point#:#Please click on the starting point of the polygon.
 content#:#cont_click_tl_corner#:#Please click on the top left corner of the desired area.
 content#:#cont_code_import_file#:#Import
-content#:#cont_code_manual_editing#:#Manuelle Eingabe
+content#:#cont_code_manual_editing#:#Manual Editing
 content#:#cont_colspan#:#Col. Span
 content#:#cont_commented_by#:#Commented by
 content#:#cont_comments#:#Store Comments
@@ -6426,7 +6425,7 @@ content#:#cont_disable_def_feedback#:#Disable Default Question Feedback
 content#:#cont_disable_def_feedback_info#:#The standard feedback for a question is not displayed after answering a question.
 content#:#cont_download#:#Download
 content#:#cont_download_title#:#Download Title
-content#:#cont_drag_and_drop_elements#:#To <b>move</b> a page element, <b>drag</b> it with the mouse to the intended location and <b/>drop<b> it.
+content#:#cont_drag_and_drop_elements#:#To <b>move</b> a page element, <b>drag</b> it with the mouse to the intended location and <b>drop</b> it.
 content#:#cont_drag_element_click_save#:#Drag and drop the element to the desired position. Then hit ‘Save’.
 content#:#cont_ed_align_center#:#Align: Center
 content#:#cont_ed_align_left#:#Align: Left
@@ -7158,7 +7157,7 @@ content#:#cont_special_page#:#Special Content Page
 content#:#cont_split_cell#:#Split Cell
 content#:#cont_spreadsheet_table#:#Spreadsheet Table
 content#:#cont_sqst#:#Survey Question (Assigned Material)
-content#:#cont_src#:#Source code
+content#:#cont_src#:#Programming language
 content#:#cont_src_other#:#other
 content#:#cont_st_title#:#Chapter Title
 content#:#cont_standard#:#Standard
@@ -7532,7 +7531,7 @@ crs#:#crs_added_starters#:#Assigned start object(s).
 crs#:#crs_added_to_list#:#You have been assigned to the waiting list. You are assigned to position %s on the waiting list.
 crs#:#crs_admin#:#Administrator
 crs#:#crs_administrators#:#Administrators
-crs#:#crs_admission_link_failure_availability#:#Can't register: Course is not online.
+crs#:#crs_admission_link_failure_availability#:#Cannot register: The course is outside its availability period.
 crs#:#crs_admission_link_failure_invalid_code#:#Can't register: Link is invalid.
 crs#:#crs_admission_link_failure_membership_limited#:#Can't register: Course membership is limited.
 crs#:#crs_admission_link_failure_offline#:#Can't register: Course is offline.
@@ -7789,7 +7788,7 @@ crs#:#crs_no_archives_selected#:#Please select an archive
 crs#:#crs_no_notify#:#No notify for new registrations
 crs#:#crs_no_objective_lms_found#:#This course does not contain learning material that could be assigned to the learning objective.
 crs#:#crs_no_objective_selected#:#Please select one objective.
-crs#:#crs_no_objectives_created#:#No Course Materials created
+crs#:#crs_no_objectives_created#:#No learning objectives created
 crs#:#crs_no_subscribers_selected#:#Please select a user
 crs#:#crs_no_users_added#:#No members added
 crs#:#crs_no_users_selected#:#You did not select a user
@@ -7853,7 +7852,7 @@ crs#:#crs_objective_wiz_title#:#Describe Learning Objective
 crs#:#crs_objective_wiz_title_info#:#Please choose a title and a short description of the learning objective.
 crs#:#crs_objectives#:#Learning Objectives
 crs#:#crs_objectives_assigned_lm#:#The selected materials have been assigned.
-crs#:#crs_objectives_deleted#:#Delete learning objectives
+crs#:#crs_objectives_deleted#:#Learning objectives deleted
 crs#:#crs_objectives_edit_question_assignments#:#Edit Question Assignment
 crs#:#crs_objectives_reset_sure#:#You want to delete all results of this course. <br />All test results will be deleted.
 crs#:#crs_objectives_reseted#:#Reseted results.
@@ -7919,7 +7918,7 @@ crs#:#crs_sort_timing_info#:#Sort course items be their activation time or timin
 crs#:#crs_sort_title#:#Titles in Alphabetical Order
 crs#:#crs_start#:#Start
 crs#:#crs_start_objects#:#Start Objects
-crs#:#crs_starter_delete_sure#:#Are you sure you want to delete the following start objects?
+crs#:#crs_starter_delete_sure#:#Are you sure you want to remove the following objects from the start objects? The objects themselves will be retained.
 crs#:#crs_starter_deleted#:#Removed assignment.
 crs#:#crs_starters_already_assigned#:#This object was already assigned.
 crs#:#crs_status#:#Status
@@ -8126,7 +8125,7 @@ crs#:#timings_cron_reminder_exceeded_subject#:#You have exceeded the processing 
 crs#:#timings_cron_reminder_freshly_start#:#The processing period started at:
 crs#:#timings_cron_reminder_started_subject#:#The processing period has started.
 crs#:#timings_edit#:#Edit Timings
-crs#:#timings_of#:#Timings Off
+crs#:#timings_of#:#Timings of
 crs#:#timings_reminder_notifications#:#Course Timings Notifications
 crs#:#timings_reminder_notifications_info#:#Notify course members when they exceed timing materials.
 crs#:#timings_timings#:#Timings
@@ -8633,7 +8632,7 @@ dateplaner#:#crs_cal_reg_start#:#Registration Start
 dateplaner#:#crs_cal_start#:#Course starts
 dateplaner#:#date_format#:#m/d/Y H:i
 dateplaner#:#end_date#:#End Date
-dateplaner#:#err_end_before_start#:#The appointment must not start before the end.
+dateplaner#:#err_end_before_start#:#The appointment must not end before it starts.
 dateplaner#:#err_missing_title#:#Please enter an appointment title.
 dateplaner#:#free#:#Free
 dateplaner#:#grp_cal_end#:#Group ends
@@ -10514,7 +10513,7 @@ gsfo#:#accessibility#:#Accessibility
 gsfo#:#confirm_delete#:#Do you really want to delete the following Item(s)?
 gsfo#:#confirm_reset#:#Resetting the footer will restore all entries to their original state. All customizations and manual entries will be deleted. Do you want to continue?
 gsfo#:#entries_add#:#Add Entry
-gsfo#:#entries_edit#:#entries_edit
+gsfo#:#entries_edit#:#Edit Entries
 gsfo#:#entries_parent#:#Select Group
 gsfo#:#entries_select_parent#:#Move Entry to Group
 gsfo#:#entries_target_group#:#Select target group
@@ -10701,7 +10700,7 @@ iass#:#iass_notify_explanation#:#The participant will be notified via e-mail aft
 iass#:#iass_phone#:#Phone
 iass#:#iass_place#:#Place of assessment
 iass#:#iass_record#:#Record note
-iass#:#iass_record_info#:#Examinees can see the record note after having been graded finally. If notification is enabled below, the record note will be send to the participant by e-mail, too.
+iass#:#iass_record_info#:#Participants can see the record note after their assessment has been finalised if “Make Result Available to Participant” is enabled below. The record note will also be sent to the participant by e-mail.
 iass#:#iass_record_template#:#Record template
 iass#:#iass_record_template_explanation#:#Template for participant grading record. Will be used automatically for any new participant.
 iass#:#iass_remove_user_qst#:#Should the participant really be removed?
@@ -11008,11 +11007,11 @@ ldoc#:#ldoc_agreement_documents_tab_label#:#Documents
 ldoc#:#ldoc_agreement_exists#:#Existent
 ldoc#:#ldoc_agreement_missing#:#Missing
 ldoc#:#ldoc_crit_type_usr_country#:#Profile Country
-ldoc#:#ldoc_crit_type_usr_country_info#:#Your document is displayed (and must be accepted the first time a user logs in) if the country set in their user profile matches the country criterion selected from the list below.  Subsequent changes to the country in a user’s profile do not automatically lead to a new document being displayed. You cannot use the same country as the display criterion for more than one document.
+ldoc#:#ldoc_crit_type_usr_country_info#:#Your document is displayed (and must be accepted the first time a user logs in) if the country set in their user profile matches the country criterion selected from the list below.  Subsequent changes to the country in a user’s profile are re-evaluated on login only if “Re-evaluate on Successful Login” is enabled. You cannot use the same country as the display criterion for more than one document.
 ldoc#:#ldoc_crit_type_usr_global_role#:#User Has Global Role
-ldoc#:#ldoc_crit_type_usr_global_role_info#:#The document is displayed (and must be accepted the first time a user logs in) if the global role the user has matches the global role selected from the list below.  Subsequent changes to a user’s global role do not automatically lead to a new ToS document being displayed.
+ldoc#:#ldoc_crit_type_usr_global_role_info#:#The document is displayed (and must be accepted the first time a user logs in) if the global role the user has matches the global role selected from the list below.  Subsequent changes to a user’s global role are re-evaluated on login only if “Re-evaluate on Successful Login” is enabled.
 ldoc#:#ldoc_crit_type_usr_language#:#Profile Language
-ldoc#:#ldoc_crit_type_usr_language_info#:#Your document is displayed (and must be accepted) during registration if the user’s language (selected from the list below) matches the language used during registration; or upon login if the user switches to this language in their preferences.  Please note that each language can only be set as the display criterion for a single document.
+ldoc#:#ldoc_crit_type_usr_language_info#:#Your document is displayed (and must be accepted) during registration if the user’s language (selected from the list below) matches the language used during registration; or upon a later login if the user switches to this language in their preferences and “Re-evaluate on Successful Login” is enabled.  Please note that each language can only be set as the display criterion for a single document.
 ldoc#:#ldoc_criterion_assignment_cannot_match#:#It is not possible to use this particular criterion for displaying your document. Because of another criterion this document would never match.
 ldoc#:#ldoc_criterion_assignment_must_be_unique#:#It is not possible to use this particular criterion for displaying your document. This criterion already exists.
 ldoc#:#ldoc_deleted_documents_p#:#The documents have been deleted.
@@ -11031,7 +11030,7 @@ ldoc#:#ldoc_form_criterion#:#Criterion
 ldoc#:#ldoc_form_criterion_standard_fields_info_text#:#Please check the settings of the standard fields before defining the criterion.
 ldoc#:#ldoc_form_document#:#Document
 ldoc#:#ldoc_form_document_content_changed#:#The uploaded file has had its html &lt;head&gt; information removed by ILIAS. Please check the result and upload a new file if necessary.
-ldoc#:#ldoc_form_document_info#:#Please select a file from your local filesystem. You can either upload a plain text file, or a simple HTML file. HTML files will have their &lt;head/gt; information removed – only the contents of the body element will be used.
+ldoc#:#ldoc_form_document_info#:#Please select a file from your local filesystem. You can either upload a plain text file, or a simple HTML file. HTML files will have their &lt;head&gt; information removed – only the contents of the body element will be used.
 ldoc#:#ldoc_form_document_new#:#Change Content
 ldoc#:#ldoc_form_document_new_info#:#Here you can select a file from your local filesystem to change the contents of the document. You can either upload a plain text file, or a simple HTML file. HTML files will have their &lt;head&gt; information removed - only the contents of the body element will be used. The existing contents of the document will be replaced. The acceptance history will not be affected.
 ldoc#:#ldoc_form_document_title#:#Title
@@ -11172,7 +11171,7 @@ lso#:#first_access#:#First Access
 lso#:#last_visited_step#:#Last Visited Step
 lso#:#learner_view#:#Overview
 lso#:#lp_not_relevant_post_cond#:#currently not relevant for continuation
-lso#:#lso_activation_online_info#:#Set the Learning Sequence online to make it visible and available for Learning Sequence members. If not, only administrators and tutors will have access to it.
+lso#:#lso_activation_online_info#:#Set the Learning Sequence online to make it visible and available to members. While it is offline, access is limited to users with at least one of the following permissions: “Edit Settings”, “Manage members” or “Edit Learning Progress Settings”.
 lso#:#lso_at_least_one_admin#:#There has to be at least one learning sequence administrator.
 lso#:#lso_edit_permission#:#User can change permission settings
 lso#:#lso_header_delete_members#:#Would you like to remove the following members from this learning sequence?
@@ -11386,7 +11385,7 @@ lti#:#lti_con_grade_synchronization#:#Assignment and Grade Services###04 12 2025
 lti#:#lti_con_grade_synchronization_info#:#The LTI tool must offer 'Assignment and Grade Services'.###04 12 2025 new variable
 lti#:#lti_con_initiate_login_url#:#Initiate Login URL
 lti#:#lti_con_key_type#:#Public Key Type
-lti#:#lti_con_key_type_jwk#:#URL (Json Web Token)
+lti#:#lti_con_key_type_jwk#:#URL (JSON Web Key Set)
 lti#:#lti_con_key_type_jwk_url#:#URL
 lti#:#lti_con_key_type_rsa#:#RSA-Key
 lti#:#lti_con_key_type_rsa_public_key#:#Public Key
@@ -12952,7 +12951,7 @@ mob#:#mob_multi_srt_files#:#Subtitle Files
 mob#:#mob_no_extraction_possible#:#Sorry, it was not able to extract an image from the file.
 mob#:#mob_no_fixed_size_map_editing#:#Please define a fixed size for your image before using map areas. If your image is scaled by content style or other CSS rules, your map areas will not fit anymore.
 mob#:#mob_object#:#Object
-mob#:#mob_please_select_pool#:#Bitte wählen Sie einen Medienpool aus.
+mob#:#mob_please_select_pool#:#Please select a media pool.
 mob#:#mob_preview_picture#:#Preview Picture
 mob#:#mob_really_delete_srt#:#Do you really want to delete the following subtitle files?
 mob#:#mob_second#:#Second
@@ -12984,8 +12983,8 @@ mst#:#mst_memb_status_waitinglist#:#Waiting List
 mst#:#mst_my_staff#:#Staff
 mst#:#mst_opt_all#:#All
 mst#:#mst_please_select_course#:#Please select a course.
-mst#:#mst_profile_fulfilled#:#Not met, yet
-mst#:#mst_profile_not_fulfilled#:#Fulfilled
+mst#:#mst_profile_fulfilled#:#Fulfilled
+mst#:#mst_profile_not_fulfilled#:#Not met, yet
 mst#:#mst_select_course#:#Select Course
 mst#:#mst_show_courses#:#Course Memberships
 news#:#lso_news_online_title#:#A new learning sequence object is online!
@@ -13295,7 +13294,7 @@ orgu#:#msg_confirm_deletion#:#Would you really like to delete the following Posi
 orgu#:#msg_confirm_remove_user#:#Would you really like to remove the following User from the Position %s?
 orgu#:#msg_deleted#:#Deleted
 orgu#:#msg_position_created#:#Position created.
-orgu#:#msg_position_delete_fail#:#Position wurde nicht gefunden.
+orgu#:#msg_position_delete_fail#:#Position was not found.
 orgu#:#msg_position_updated#:#Position updated.
 orgu#:#msg_success_permission_saved#:#Permissions saved.
 orgu#:#no_assignment#:#Please check your XML-File. There is no User Assignment.
@@ -13537,7 +13536,7 @@ prg#:#membership_source_id#:#ID
 prg#:#membership_source_id_byline_objid#:#Please use the <b>object-id</b>
 prg#:#membership_source_id_byline_refid#:#Please use the <b>reference-id</b>
 prg#:#membership_source_type#:#Source
-prg#:#modal_automembership_title#:#Automatismus hinzufügen
+prg#:#modal_automembership_title#:#Add Automatic Membership Rule
 prg#:#modal_categories_title#:#Category to be monitored
 prg#:#modal_member_auto_select_title#:#Select source for auto assignment
 prg#:#msg_acknowledge_courses#:#Completed Courses have been acknowledged.
@@ -13646,7 +13645,7 @@ prg#:#prg_edit#:#Edit Study Programme
 prg#:#prg_expiry_date#:#Expiry date
 prg#:#prg_formatted_period#:#%d days
 prg#:#prg_import_action_not_allowed#:#Cannot import into Study Programmes.
-prg#:#prg_invalidate_expired_progresses_desc#:#Marks expired progresses at Studyprogrammes as 'not passed'
+prg#:#prg_invalidate_expired_progresses_desc#:#Marks expired Study Programme progress as 'invalidated'.
 prg#:#prg_invalidate_expired_progresses_title#:#Limited validity of Studyprogramme progress
 prg#:#prg_link#:#Link
 prg#:#prg_mail_context_info#:#For the participant e-mails on the member and learning progress screens of a study programme
@@ -14745,11 +14744,11 @@ rbac#:#rbac_form_copy_roles_adjust_type_clone_info#:#Completely overwrites the p
 rbac#:#rbac_form_copy_roles_adjust_type_remove#:#Remove Permissions
 rbac#:#rbac_form_copy_roles_adjust_type_remove_info#:#Removes the SELECTED permissions (of the role or role template from which you are copying) from the default permissions of the target role.
 rbac#:#rbac_form_copy_roles_ce_add_no#:#Do NOT Alter Existing Objects
-rbac#:#rbac_form_copy_roles_ce_add_no_info#:#Only the permission settings of the target role(s) will be overwritten. Existing objects will not be affected.
+rbac#:#rbac_form_copy_roles_ce_add_no_info#:#The selected permissions will be added only to the target roles. Existing objects will not be affected.
 rbac#:#rbac_form_copy_roles_ce_add_yes#:#Alter Existing Objects
 rbac#:#rbac_form_copy_roles_ce_add_yes_info#:#The selected permissions settings of the role from which you are copying will be added to both the target role(s) AND any existing objects.
 rbac#:#rbac_form_copy_roles_ce_clone_no#:#Do NOT Alter Existing Objects
-rbac#:#rbac_form_copy_roles_ce_clone_no_info#:#Only the permission settings of the target role(s) will be overwritten. Existing objects will not be affected.
+rbac#:#rbac_form_copy_roles_ce_clone_no_info#:#The selected permissions will be added only to the target roles. Existing objects will not be affected.
 rbac#:#rbac_form_copy_roles_ce_clone_yes#:#Alter Existing Objects
 rbac#:#rbac_form_copy_roles_ce_clone_yes_info#:#The permissions settings of the target role(s) AND of any existing objects will be overwritten.
 rbac#:#rbac_form_copy_roles_ce_remove_no#:#Do NOT Alter Existing Objects
@@ -15213,7 +15212,7 @@ rep#:#rep_rec_content_removed#:#Recommended content has been removed.
 rep#:#rep_recommended_content#:#Recommended Content
 rep#:#rep_remove_rec_content#:#Are you sure you want to remove the following recommended content?
 rep#:#rep_target_location#:#Target Location
-rep#:#rep_target_location_info#:#Bitte wählen Sie nun das Ziel aus, an dem die ausgewählten Objekte wiederhergestellt werden sollen.
+rep#:#rep_target_location_info#:#Select the location where the selected objects should be restored.
 rep#:#rep_time_based_availability#:#Limited Availability Period
 rep#:#rep_time_based_availability_info#:#The selected items will only be visible between the start and end date.
 rep#:#rep_time_period#:#Period
@@ -15607,7 +15606,7 @@ search#:#search_for_users#:#Search for Users
 search#:#search_grp_title#:#Group Name
 search#:#search_item_filter_form#:#Search by Type
 search#:#search_item_filter_form_info#:#Search can be restricted to the chosen object types.
-search#:#search_like_info#:#Choose this option to get best results.###Needs to be adapted to new content of German lang file.
+search#:#search_like_info#:#Only the ILIAS database is searched. No additional software is required. File contents and metadata are not searched. Only matches in titles and descriptions are included in the search results.
 search#:#search_limit_reached#:#Your search produced more than %s hits. You can restrict the search terms to receive more detailed results.
 search#:#search_lucene#:#Lucene search
 search#:#search_mime_excel#:#Excel Files
@@ -16051,7 +16050,7 @@ style#:#directory_created#:#Directory created:
 style#:#documentation#:#Documentation
 style#:#edit_by_color#:#Edit by Color
 style#:#edit_by_icon#:#Edit by Icon
-style#:#enable_system_styles_management_no_write_perm#:#System styles management is enabled but ILIAS does not have write permission on the Customizing/global/skin folder. No new styles can therefore be created/edited.
+style#:#enable_system_styles_management_no_write_perm#:#System styles management is enabled but ILIAS does not have write permission on the public/Customizing/skin folder. No new styles can therefore be created/edited.
 style#:#entries_reloaded#:#All entries have been reloaded
 style#:#file_deleted#:#Following file has been deleted:
 style#:#font_dir#:#Font Directory
