@@ -190,7 +190,7 @@ class Renderer extends AbstractComponentRenderer
         }
 
         $tpl->setVariable('LABEL', $label_prefix . ' ' . $options[$selected] . ' ');
-        $tpl->setVariable("ARIA_LABEL", $this->txt("sortation"));
+        $tpl->setVariable("ARIA_LABEL", $this->txt("label_sortation"));
         return $tpl->get();
     }
 
