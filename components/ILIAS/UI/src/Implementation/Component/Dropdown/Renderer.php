@@ -72,7 +72,9 @@ class Renderer extends AbstractComponentRenderer
                 ? $component->getAriaLabel()
                 : $this->txt("actions");
             $tpl->setCurrentBlock("aria_label");
-            $tpl->setVariable("ARIA_LABEL", $aria_label);
+            $tpl->setVariable("ARIA_LABEL", $this->convertSpecialCharacters(
+                html_entity_decode(strip_tags($aria_label), ENT_QUOTES | ENT_HTML5, 'UTF-8')
+            ));
             $tpl->parseCurrentBlock();
         }
 

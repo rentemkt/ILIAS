@@ -2911,7 +2911,7 @@ class ilObjectListGUI
             ->standard($this->current_actions)
             ->withAriaLabel(sprintf(
                 $this->lng->txt('actions_for'),
-                htmlspecialchars(addslashes($title))
+                $title
             ));
     }
 

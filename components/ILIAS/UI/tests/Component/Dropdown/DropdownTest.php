@@ -185,4 +185,50 @@ EOT;
 
         $this->assertHTMLEquals($expected, $html);
     }
+
+    public function testRenderHtmlLabelAsPlainAriaLabel(): void
+    {
+        $label = '<span class="hidden-xs">Actions</span>';
+        $dropdown = $this->getFactory()->standard([
+            new I\Component\Button\Shy("Edit", "#")
+        ])->withLabel($label)->withAriaLabel('Actions for ' . $label);
+
+        $html = $this->getDefaultRenderer()->render($dropdown);
+
+        $this->assertStringContainsString($label . '<span class="caret">', $html);
+        $this->assertStringContainsString('aria-label="Actions for Actions"', $html);
+    }
+
+    public function testRenderAriaLabelWithSpecialCharacters(): void
+    {
+        $label = 'Actions for "João" & \'Maria\'';
+        $dropdown = $this->getFactory()->standard([
+            new I\Component\Button\Shy("Edit", "#")
+        ])->withAriaLabel($label);
+
+        $html = $this->getDefaultRenderer()->render($dropdown);
+
+        $this->assertStringContainsString(
+            'aria-label="Actions for &quot;João&quot; &amp; &#039;Maria&#039;"',
+            $html
+        );
+        $document = new DOMDocument();
+        $document->loadHTML('<?xml encoding="UTF-8">' . $html);
+        $button = $document->getElementsByTagName('button')->item(0);
+        $this->assertSame($label, $button->getAttribute('aria-label'));
+    }
+
+    public function testRenderAriaLabelWithExistingEntities(): void
+    {
+        $dropdown = $this->getFactory()->standard([
+            new I\Component\Button\Shy("Edit", "#")
+        ])->withAriaLabel('Actions for <span>&quot;João&quot; &amp; Maria</span>');
+
+        $html = $this->getDefaultRenderer()->render($dropdown);
+
+        $this->assertStringContainsString(
+            'aria-label="Actions for &quot;João&quot; &amp; Maria"',
+            $html
+        );
+    }
 }
