@@ -207,7 +207,7 @@ class ilPCVerificationGUI extends ilPageContentGUI
             try {
                 $certificateFileService->createCertificateFile($userId, $objectId);
             } catch (\ILIAS\Filesystem\Exception\FileAlreadyExistsException $e) {
-                $this->tpl->setOnScreenMessage('info', $this->lng->txt('certificate_file_not_found_error'), true);
+                $this->tpl->setOnScreenMessage('info', $this->lng->txt('certificate_file_already_exists_error'), true);
                 $this->log->warning($e->getMessage());
             } catch (\ILIAS\Filesystem\Exception\IOException $e) {
                 $this->tpl->setOnScreenMessage('info', $this->lng->txt('certificate_file_input_output_error'), true);
@@ -269,7 +269,10 @@ class ilPCVerificationGUI extends ilPageContentGUI
                         );
                         $this->content_obj->setData('crta', $objectId);
                     }
-                } catch (\ILIAS\Filesystem\Exception\FileNotFoundException | \ILIAS\Filesystem\Exception\FileAlreadyExistsException $e) {
+                } catch (\ILIAS\Filesystem\Exception\FileAlreadyExistsException $e) {
+                    $this->tpl->setOnScreenMessage('info', $this->lng->txt('certificate_file_already_exists_error'), true);
+                    $this->log->warning($e->getMessage());
+                } catch (\ILIAS\Filesystem\Exception\FileNotFoundException $e) {
                     $this->tpl->setOnScreenMessage('info', $this->lng->txt('certificate_file_not_found_error'), true);
                     $this->log->warning($e->getMessage());
                 } catch (\ILIAS\Filesystem\Exception\IOException $e) {
