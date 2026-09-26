@@ -1,0 +1,76 @@
+source	translation	context
+Dashboard	Painel	navigation
+Repository	Repositório	navigation
+Personal workspace	Espaço pessoal	navigation
+Course	Curso	learning object
+Group	Grupo	learning object
+Category	Categoria	learning object
+Folder	Pasta	learning object
+Exercise	Atividade	learning object
+Assignment	Tarefa	pedagogical unit with instructions and deadline
+Assignment	Atribuição	role, metadata or permission association
+Submission	Entrega	learner work
+Test	Prova	assessment object
+Question	Questão	assessment
+Answer	Resposta	assessment
+Question pool	Banco de questões	assessment
+Question pool for tests	Banco de questões para provas	assessment
+Survey	Pesquisa	feedback object
+Poll	Enquete	feedback object
+Feedback	Feedback	learning feedback
+Peer feedback	Feedback entre pares	learning feedback
+Learning objective	Objetivo de aprendizagem	pedagogy
+Learning progress	Progresso de aprendizagem	pedagogy
+Learning module	Módulo de aprendizagem	learning object
+Learning sequence	Sequência de aprendizagem	learning object
+Study programme	Programa de estudo	learning object
+Competence	Competência	competence management
+Skill	Competência	competence management
+Badge	Medalha	achievement object
+Achievement	Conquista	navigation
+Certificate	Certificado	achievement object
+Portfolio	Portfólio	learning object
+Portfolio template	Modelo de portfólio	learning object
+Booking pool	Central de reservas	resource booking
+Booking object	Item reservável	resource booking
+Booking	Reserva	resource booking
+Session	Sessão	course event
+Session	Sessão	login session
+Tutor	Tutor	course role
+Learner	Aluno	learning context
+Participant	Participante	membership
+Member	Membro	membership
+Administrator	Administrador	role
+Role	Perfil de acesso	RBAC permissions
+Profile	Perfil	personal profile
+Permission	Permissão	access control
+Inheritance	Herança	permissions and styles
+User	Usuário	account
+Username	Nome de usuário	account
+Password	Senha	account
+Registration	Cadastro	account creation
+Registration	Inscrição	course or event enrollment
+Enrolment	Inscrição	course enrollment
+File	Arquivo	file management
+Upload	Enviar	file action
+Download	Baixar	file action
+Share	Compartilhar	action
+Delete	Excluir	action
+Remove	Remover	action
+Save	Salvar	action
+Edit	Editar	action
+Create	Criar	action
+Cancel	Cancelar	action
+Settings	Configurações	navigation
+Metadata	Metadados	object metadata
+Taxonomy	Taxonomia	classification
+Page	Página	content editing
+Page editor	Editor de páginas	content editing
+Style	Estilo	visual configuration
+Skin	Tema	visual configuration
+Tile	Cartão	object presentation
+Accessibility	Acessibilidade	inclusive access
+Screen reader	Leitor de tela	accessibility
+Waiting list	Lista de espera	membership
+Due date	Prazo de entrega	assignment
+Deadline	Prazo	general time limit
