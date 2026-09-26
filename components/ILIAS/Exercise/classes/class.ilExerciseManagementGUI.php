@@ -735,15 +735,15 @@ class ilExerciseManagementGUI
         }
 
         $card_content = array(
-            $this->lng->txt("exc_tbl_submission_date") . ": " => ilDatePresentation::formatDate(new ilDateTime($a_data["udate"], IL_CAL_DATETIME)),
-            $str_status_key => $str_status_value,
-            $str_mark_key => $str_mark_value,
-            $str_evaluation_key => $str_evaluation_value,
-            $this->lng->txt('feedback_given') . ": " => $a_data['fb_given'],
-            $this->lng->txt('feedback_received') . ": " => $a_data['fb_received']
+            [$this->lng->txt("exc_tbl_submission_date") . ": ", ilDatePresentation::formatDate(new ilDateTime($a_data["udate"], IL_CAL_DATETIME))],
+            [$str_status_key, $str_status_value],
+            [$str_mark_key, $str_mark_value],
+            [$str_evaluation_key, $str_evaluation_value],
+            [$this->lng->txt('feedback_given') . ": ", $a_data['fb_given']],
+            [$this->lng->txt('feedback_received') . ": ", $a_data['fb_received']]
         );
         $card_tpl = new ilTemplate("tpl.exc_report_details_card.html", true, true, "components/ILIAS/Exercise");
-        foreach ($card_content as $key => $value) {
+        foreach ($card_content as [$key, $value]) {
             $card_tpl->setCurrentBlock("assingment_card");
             $card_tpl->setVariable("ROW_KEY", $key);
             $card_tpl->setVariable("ROW_VALUE", $value);
