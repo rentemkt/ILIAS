@@ -141,7 +141,8 @@ class ilUtil
         // use ilStyleDefinition instead of account to get the current style
 
         if ($use_default_style_file) {
-            $stylesheet_name = ilStyleDefinition::getCurrentStyle() . ".css";
+            $skin = ilStyleDefinition::getSkins()[ilStyleDefinition::getCurrentSkin()];
+            $stylesheet_name = $skin->getStyle(ilStyleDefinition::getCurrentStyle())->getCssFile() . ".css";
         } else {
             $stylesheet_name = $a_css_name;
         }
