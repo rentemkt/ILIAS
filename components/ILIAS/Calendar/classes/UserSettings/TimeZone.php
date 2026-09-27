@@ -95,7 +95,8 @@ class TimeZone implements SettingDefinition
         Language $lng,
         \ilSetting $settings
     ): string {
-        return \ilCalendarUtil::_getShortTimeZoneList()[\ilCalendarSettings::_getInstance()->getDefaultTimeZone()];
+        $default = \ilCalendarSettings::_getInstance()->getDefaultTimeZone();
+        return \ilCalendarUtil::_getShortTimeZoneList()[$default] ?? $default;
     }
 
     public function hasUserPersonalizedSetting(
