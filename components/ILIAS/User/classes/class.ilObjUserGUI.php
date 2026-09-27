@@ -381,12 +381,12 @@ class ilObjUserGUI extends ilObjectGUI
             $this->addValuesFromSystemInformationToUserSection($user_object, true)
         );
 
-        //set role entries
-        $this->rbac_admin->assignUser(
-            (int) $this->form_gui->getInput('default_role'),
-            $user_object->getId(),
-            true
-        );
+        // The form has no role selector anymore; chosen roles come from the Roles profile
+        // field. Without it (e.g. local user administration) assign the default role.
+        if ($this->rbac_review->assignedGlobalRoles($user_object->getId()) === []
+            && isset($this->default_role)) {
+            $this->rbac_admin->assignUser($this->default_role, $user_object->getId());
+        }
 
         $msg = $this->lng->txt('user_added');
 
